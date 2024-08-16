@@ -22,10 +22,10 @@ sudo brew services start php@7.4\n
 ~~~ 
 ~~~bash
 sudo brew services start php@7.4  
-˜˜˜ 
+~~~ 
 ~~~bash
 sudo lsof -Pn | grep php-fpm
-˜˜˜ 
+~~~ 
 ~~~bash
 sudo nano /opt/homebrew/etc/nginx/nginx.conf
 ~~~ 
@@ -635,7 +635,7 @@ pm.max_spare_servers = 3
 INDEX.PHP
 #########
 
-	
+~~~bash	
 ; Start a new pool named 'www'.
 ; the variable $pool can be used in any directive and will be replaced by the
 ; pool name ('www' here)
@@ -1075,7 +1075,7 @@ pm.max_spare_servers = 3
 ;php_admin_value[error_log] = /var/log/fpm-php.www.log
 ;php_admin_flag[log_errors] = on
 ;php_admin_value[memory_limit] = 32M
-
+~~~
 ---
 ~~~bash
 sudo nginx -s reload
