@@ -190,7 +190,7 @@ sudo nano /opt/homebrew/etc/php/7.4/php-fpm.d/www.conf
 ~~~
 ---
 ### ARQUIVO www.conf
-
+~~~bash
  ; Start a new pool named 'www'.
 ; the variable $pool can be used in any directive and will be replaced by the
 ; pool name ('www' here)
@@ -631,11 +631,6 @@ pm.max_spare_servers = 3
 ;php_admin_flag[log_errors] = on
 ;php_admin_value[memory_limit] = 32M
 
-
-INDEX.PHP
-#########
-
-~~~bash	
 ; Start a new pool named 'www'.
 ; the variable $pool can be used in any directive and will be replaced by the
 ; pool name ('www' here)
